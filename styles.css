@@ -108,11 +108,22 @@
 
   .line {
     width: 80%;
-    padding-left: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .frame {
-    margin-top: 200px;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    background-image: url(./images/Img\ Placeholder.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-color: #fff;
+  }
+
+  .work-info {
+    background-color: #fff;
   }
 
   h3 {
@@ -122,12 +133,12 @@
     line-height: 52px;
     letter-spacing: 0.37px;
     color: #1c1a19;
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: start;
     padding-left: 20px;
   }
 
-  .projects p {
+  .work-info p {
     padding-left: 20px;
     padding-right: 10px;
     font-size: 16px;
@@ -142,7 +153,7 @@
     margin-top: 10px;
   }
 
-  .projects button {
+  button {
     padding: 5px 10px;
     margin-right: 10px;
     outline: none;
@@ -164,5 +175,22 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .cards {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .card1 {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(./images/cards\ template.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-color: #fff;
+    padding-top: 20px;
   }
 }

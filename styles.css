@@ -198,9 +198,9 @@
     box-sizing: border-box;
   }
 
-  card-container {
+  /* .card-container {
     margin: 0 20px;
-  }
+  } */
 
   .text-wrapper {
     margin-left: 40px;

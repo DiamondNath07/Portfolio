@@ -10,6 +10,8 @@
 
 :root {
   --font-icon-primary-color: #fff;
+  --font-crete: "Crete Round", serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @media (min-width: 375px) {
@@ -86,16 +88,18 @@
     padding-right: 15px;
   }
 
+  main {
+    width: 100vw;
+    background-color: #fff;
+  }
+
   .projects {
     width: 100%;
     background-color: #fff;
-    background-image: url(./images/Img\ Placeholder.png);
-    background-repeat: no-repeat;
-    background-position: 50% -200%;
   }
 
   h2 {
-    font-family: "Crete Round", serif;
+    font-family: var(--font-crete);
     font-size: 40px;
     font-weight: 400;
     line-height: 52px;
@@ -109,17 +113,12 @@
   .line {
     width: 80%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .frame {
-    width: 100vw;
-    height: 50vh;
-    flex-direction: column;
-    background-image: url(./images/Img\ Placeholder.png);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
     background-color: #fff;
+    padding: 30px;
   }
 
   .work-info {
@@ -127,7 +126,7 @@
   }
 
   h3 {
-    font-family: "Crete Round", serif;
+    font-family: var(--font-crete);
     font-size: 40px;
     font-weight: 400;
     line-height: 52px;
@@ -145,7 +144,7 @@
     line-height: 18px;
     font-weight: 900;
     color: #091e42;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-inter);
   }
 
   .btn {
@@ -171,26 +170,80 @@
     color: #fff;
     margin-top: 10px;
     border: none;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-inter);
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
+    margin-bottom: 20px;
   }
 
   .cards {
     width: 100%;
     background-color: #fff;
-    text-align: center;
   }
 
   .card1 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     flex-direction: column;
     background-image: url(./images/cards\ template.png);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-color: #fff;
     padding-top: 20px;
+    background-size: 90% 100%;
+    /* margin-left: 20px; */
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+
+  card-container {
+    margin: 0 20px;
+  }
+
+  .text-wrapper {
+    margin-left: 40px;
+  }
+
+  .card1 h4 {
+    padding-top: 40px;
+    width: 70%;
+    font-family: var(--font-crete);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 28px;
+    color: #fff;
+  }
+
+  .card1 p {
+    margin-top: 10px;
+    width: 70%;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .card1 button {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400px;
+    background-color: #555555;
+    border: none;
+  }
+
+  .card-button {
+    margin-left: 20px;
+    width: 90%;
+    background-color: #ff6b00;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .card-button button {
+    background-color: transparent;
+    padding-bottom: 10px;
   }
 }

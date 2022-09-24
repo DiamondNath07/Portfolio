@@ -314,13 +314,13 @@
     font-family: var(--font-inter);
   }
 
-  footer {
+  .contact {
     width: 100%;
     background-color: #fff;
     padding-top: 30px;
   }
 
-  .footer h5 {
+  .contact h5 {
     font-size: 24px;
     line-height: 26px;
     font-weight: 700px;
@@ -342,7 +342,7 @@
     padding-top: 20px;
   }
 
-  form input {
+  .form input {
     border: none;
     border-bottom: 1px solid #555;
     width: 90%;
@@ -351,7 +351,7 @@
     color: #555;
   }
 
-  form textarea {
+  .form textarea {
     width: 90%;
     height: 90px;
     border: none;
@@ -362,14 +362,14 @@
     padding-left: 10px;
   }
 
-  footer span {
+  .contact span {
     text-align: center;
     align-items: center;
     place-items: center;
     justify-content: center;
   }
 
-  .footer span button {
+  .contact span button {
     margin-top: 30px;
     padding: 10px 15px;
     background-color: #ff6b00;
@@ -380,5 +380,36 @@
     text-align: center;
     margin-left: 130px;
     margin-bottom: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .footer-links li a {
+    padding: 0 10px;
+  }
+
+  .bline {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .b-line {
+    width: 50%;
+    background-color: #000;
+    border-radius: 10px;
+    height: 5px;
+    margin-top: 15px;
+    margin-left: 100px;
   }
 }

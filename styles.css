@@ -139,6 +139,10 @@
     padding-left: 20px;
   }
 
+  form p {
+    padding-top: 20px;
+  }
+
   .work-info p {
     padding-left: 20px;
     padding-right: 10px;
@@ -334,7 +338,7 @@
     margin-left: 40px;
   }
 
-  form p {
+  .form p {
     padding-top: 20px;
   }
 
@@ -365,7 +369,7 @@
     justify-content: center;
   }
 
-  footer span button {
+  .footer span button {
     margin-top: 30px;
     padding: 10px 15px;
     background-color: #ff6b00;

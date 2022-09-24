@@ -41,7 +41,7 @@
     margin: 0 auto;
     background-image: url(./images/Frame.png);
     background-repeat: no-repeat;
-    background-position: 100% 90%;
+    background-position: 100% 120%;
   }
 
   .text-container1 {
@@ -63,7 +63,7 @@
   .paragraph {
     width: 80%;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     font-family: "Roboto", sans-serif;
     color: var(--font-icon-primary-color);
     font-weight: 400;
@@ -77,6 +77,8 @@
     width: 200px;
     height: 40px;
     display: flex;
+    margin-top: 20px;
+    padding-bottom: 100px;
   }
 
   .icons {
@@ -92,7 +94,7 @@
   main {
     width: 100vw;
     background-color: #fff;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 
   .projects {
@@ -181,6 +183,21 @@
     font-size: 17px;
     line-height: 24px;
     margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .project-btn button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    /* transition: 0.3s ease-in-out; */
+  }
+
+  .project-btn button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #3c3a39;
+    color: #fff;
+    transition: 0.3s ease-in-out;
   }
 
   .cards {
@@ -238,20 +255,34 @@
   .card-button {
     margin-left: 20px;
     width: 90%;
-    background-color: #ff6b00;
     text-align: center;
     margin-top: 10px;
   }
 
+  .card-button button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
+  .card-button button:focus {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
   .card-button button {
-    background-color: transparent;
+    width: 100%;
+    background-color: #ff6b00;
     padding-bottom: 10px;
   }
 
   .about {
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #1c1a19;
     background-image: url(./images/Frame.png);
     background-repeat: no-repeat;
     background-position: 100% 120%;
@@ -259,16 +290,19 @@
 
   .about h1 {
     font-size: 72px;
+    padding-bottom: 0;
+    padding-top: 40px;
   }
 
   .about p {
     font-size: 90%;
     line-height: 20px;
     font-weight: 300;
+    margin-top: 0;
     letter-spacing: 0.5;
   }
 
-  .about button {
+  .about .paragraph button {
     margin-top: 20px;
     padding: 10px 15px;
     background-color: #ff6b00;
@@ -279,8 +313,31 @@
     margin-bottom: 100px;
   }
 
+  .about .paragraph button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
+  .about button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #1c1a19;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .w-line {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
   .tools {
     width: 100%;
+    padding-bottom: 60px;
   }
 
   .language,
@@ -291,6 +348,18 @@
     padding-bottom: 30px;
   }
 
+  .tools ul li {
+    list-style: none;
+    font-size: 22px;
+    line-height: 43px;
+    font-weight: 400;
+    font-family: var(--font-inter);
+    letter-spacing: 0.5;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 12px;
+  }
+
   .tools header {
     display: flex;
     justify-content: center;
@@ -299,30 +368,22 @@
 
   .tools h6 {
     font-family: var(--font-inter);
-    font-size: 42px;
+    font-size: 32px;
+    line-height: 44px;
     color: #fff;
     text-transform: capitalize;
     padding-left: 15px;
   }
 
-  .tools p {
-    color: #fff;
-    font-size: 32px;
-    line-height: 40px;
-    padding-top: 20px;
-    text-transform: capitalize;
-    font-family: var(--font-inter);
-  }
-
   .contact {
     width: 100%;
     background-color: #fff;
-    padding-top: 30px;
+    padding-top: 60px;
   }
 
   .contact h5 {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 32px;
+    line-height: 45px;
     font-weight: 700px;
     color: #172b4d;
     font-family: var(--font-inter);
@@ -383,6 +444,20 @@
     border: none;
   }
 
+  .contact span button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
+  .contact span button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #1c1a19;
+    color: #fff;
+    transition: 0.5s;
+  }
+
   .footer {
     width: 100%;
     background-color: #fff;
@@ -400,17 +475,14 @@
     padding: 0 10px;
   }
 
-  .bline {
-    height: 100px;
-    margin-bottom: 20px;
-  }
-
   .b-line {
     width: 50%;
     background-color: #000;
     border-radius: 10px;
-    height: 5px;
+    height: 1px;
+    padding-top: 10px;
     margin-top: 15px;
-    margin-left: 100px;
+    margin-left: 110px;
+    margin-bottom: 20px;
   }
 }

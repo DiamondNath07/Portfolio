@@ -274,6 +274,20 @@
     letter-spacing: 0.5;
   }
 
+  .contact span button {
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: #ff6b00;
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    text-align: center;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    border: none;
+  }
+
   .about .paragraph button {
     margin-top: 20px;
     padding: 10px 15px;
@@ -388,20 +402,6 @@
     justify-content: center;
   }
 
-  .contact span button {
-    margin-top: 30px;
-    padding: 10px 15px;
-    background-color: #ff6b00;
-    color: #fff;
-    font-size: 18px;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    text-align: center;
-    margin-left: 130px;
-    margin-bottom: 40px;
-    border: none;
-  }
-
   .footer {
     width: 100%;
     background-color: #fff;
@@ -431,32 +431,25 @@
   }
 
   /* hover effects */
-  .about .paragraph button:hover {
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.5s;
-  }
-
-  .about button:focus {
-    background-color: #ff6b00;
-    border: 1px solid #1c1a19;
-    color: #fff;
-    transition: 0.5s;
-  }
-
-  .card-button button:hover {
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.5s;
-  }
 
   .card-button button:focus {
     background-color: #fdfadf;
     border: 1px solid #ff6b00;
     color: #ff6b00;
     transition: 0.5s;
+  }
+
+  .project-btn button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .project-btn button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #3c3a39;
+    color: #fff;
+    transition: 0.3s ease-in-out;
   }
 
   .contact span button:hover {
@@ -473,16 +466,24 @@
     transition: 0.5s;
   }
 
-  .project-btn button:hover {
+  .about button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #1c1a19;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .about .paragraph button:hover {
     background-color: #fdfadf;
     border: 1px solid #ff6b00;
     color: #ff6b00;
+    transition: 0.5s;
   }
 
-  .project-btn button:focus {
-    background-color: #ff6b00;
-    border: 1px solid #3c3a39;
-    color: #fff;
-    transition: 0.3s ease-in-out;
+  .card-button button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.6s;
   }
 }

@@ -321,13 +321,8 @@
   footer {
     width: 100%;
     background-color: #fff;
-    /* text-align: center; */
-    padding-top: 40px;
+    padding-top: 30px;
   }
-
-  /* title {
-    text-align: center;
-  } */
 
   .footer h5 {
     font-size: 24px;

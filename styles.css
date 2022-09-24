@@ -193,14 +193,9 @@
     background-color: #fff;
     padding-top: 20px;
     background-size: 90% 100%;
-    /* margin-left: 20px; */
     margin-right: 10px;
     box-sizing: border-box;
   }
-
-  /* .card-container {
-    margin: 0 20px;
-  } */
 
   .text-wrapper {
     margin-left: 40px;
@@ -232,7 +227,7 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400px;
-    background-color: #555555;
+    background-color: #555;
     border: none;
   }
 
@@ -253,14 +248,12 @@
     width: 100%;
     height: 100%;
     background-color: #000;
-    background: url(./images/Frame.png);
+    background-image: url(./images/Frame.png);
     background-repeat: no-repeat;
     background-position: 100% 120%;
-    /* transform: translateY(-300%); */
   }
 
   .about h1 {
-    /* padding-top: 60px; */
     font-size: 72px;
   }
 
@@ -298,7 +291,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-evenly; */
   }
 
   .tools h6 {
@@ -348,11 +340,11 @@
 
   form input {
     border: none;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #555;
     width: 90%;
     line-height: 30px;
     font-family: var(--font-inter);
-    color: #555555;
+    color: #555;
   }
 
   form textarea {
@@ -381,9 +373,8 @@
     font-size: 18px;
     font-family: var(--font-inter);
     font-weight: 600;
-    margin-bottom: 100px;
     text-align: center;
     margin-left: 130px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }

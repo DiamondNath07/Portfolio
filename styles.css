@@ -452,6 +452,27 @@
     transition: 0.3s ease-in-out;
   }
 
+  .about button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #1c1a19;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .card-button button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
+  .about .paragraph button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
   .contact span button:hover {
     background-color: #fdfadf;
     border: 1px solid #ff6b00;
@@ -464,26 +485,5 @@
     border: 1px solid #1c1a19;
     color: #fff;
     transition: 0.5s;
-  }
-
-  .about button:focus {
-    background-color: #ff6b00;
-    border: 1px solid #1c1a19;
-    color: #fff;
-    transition: 0.5s;
-  }
-
-  .about .paragraph button:hover {
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.5s;
-  }
-
-  .card-button button:hover {
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.6s;
   }
 }

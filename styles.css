@@ -176,6 +176,7 @@
     padding: 5px 15px;
     background-color: #ff6b00;
     color: #fff;
+    float: right;
     margin-top: 10px;
     border: none;
     font-family: var(--font-inter);

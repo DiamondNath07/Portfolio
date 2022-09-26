@@ -15,7 +15,7 @@
   --font-inter: "Inter", sans-serif;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 678px) {
   body {
     background-color: #1c1a19;
   }
@@ -176,7 +176,6 @@
     padding: 5px 15px;
     background-color: #ff6b00;
     color: #fff;
-    float: right;
     margin-top: 10px;
     border: none;
     font-family: var(--font-inter);

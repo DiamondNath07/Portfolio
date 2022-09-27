@@ -15,7 +15,7 @@
   --font-inter: "Inter", sans-serif;
 }
 
-@media (max-width: 678px) {
+@media (min-width: 375px) {
   body {
     background-color: #1c1a19;
   }

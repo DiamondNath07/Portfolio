@@ -17,14 +17,15 @@
 
 body {
   background-color: #1c1a19;
+  overflow-x: hidden;
 }
 
 .nav {
   width: 100%;
   background-color: #3c3a39;
-  padding: 10px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   top: 0;
 }
@@ -32,6 +33,10 @@ body {
 .menu-bar {
   margin-top: 10px;
   padding-right: 20px;
+}
+
+.navlinks {
+  display: none;
 }
 
 .intro-section {
@@ -44,13 +49,13 @@ body {
 }
 
 .text-container1 {
-  width: 100%;
-  height: 124px;
+  width: clamp(327px, 30vw, 1440px);
+  height: clamp(124px, 20vh, 870px);
 }
 
 h1 {
   font-family: "Crete Round", serif;
-  font-size: 56px;
+  font-size: clamp(56px, 10vw, 72px);
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.37px;
@@ -59,11 +64,21 @@ h1 {
   margin-left: 30px;
 }
 
+.paragraph #sub-p {
+  font-size: 32px;
+  line-height: 44px;
+  font-family: var(--font-inter);
+  color: var(--font-icon-primary-color);
+  font-weight: 500;
+  padding-bottom: 10px;
+  letter-spacing: 0.9px;
+}
+
 .paragraph {
-  width: 80%;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  width: clamp(327px, 70vw, 566px);
+  font-size: clamp(16px, 30vw, 20px);
+  line-height: clamp(24px, 20vh, 32px);
+  font-family: var(--font-inter);
   color: var(--font-icon-primary-color);
   font-weight: 400;
   padding-left: 35px;
@@ -73,9 +88,8 @@ h1 {
 }
 
 .links {
-  width: 200px;
+  /* width: 200px; */
   height: 40px;
-  display: flex;
   margin-top: 20px;
   padding-bottom: 100px;
 }
@@ -390,4 +404,58 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* navbar */
+
+  .navlinks {
+    display: block;
+  }
+
+  .links-icons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .links-icons li a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter";
+    font-weight: 700px;
+    color: #fff;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  /* intro-section */
+
+  .intro-section {
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .intro-writeup {
+    margin-left: 100px;
+  }
+
+  .icons {
+    display: block;
+    float: left!;
+    margin-top: -250px;
+    margin-left: 20px;
+  }
+
+  .icons li {
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
 }

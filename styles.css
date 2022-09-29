@@ -133,6 +133,12 @@ h2 {
   margin-top: 15px;
 }
 
+.underline {
+  height: 0px;
+  border: 1px solid #555;
+  width: clamp(150px, 80vw, 798px);
+}
+
 .frame {
   background-color: #fff;
   padding: 30px;
@@ -459,5 +465,28 @@ button {
     padding-left: 20px;
     padding-right: 40px;
     padding-bottom: 20px;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    /* justify-content: space-around; */
+  }
+
+  header h2 {
+    margin-left: 150px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #091e42;
+  }
+
+  .line {
+    width: 50%;
+  }
+
+  .underline {
+    margin-left: -130px;
+    margin-top: 30px;
   }
 }

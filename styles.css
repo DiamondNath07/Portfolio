@@ -144,6 +144,10 @@ h2 {
   padding: 30px;
 }
 
+.frame2 {
+  display: none;
+}
+
 .work-info {
   background-color: #fff;
 }
@@ -167,11 +171,11 @@ form p {
 .work-info p {
   padding-left: 20px;
   padding-right: 10px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
   color: #091e42;
+  font-weight: 500;
   font-family: var(--font-inter);
+  font-size: clamp(16px, 30vw, 20px);
+  line-height: clamp(24px, 20vh, 32px);
 }
 
 .btn {
@@ -182,6 +186,7 @@ form p {
 button {
   padding: 5px 10px;
   margin-right: 10px;
+  font-size: 18px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.726);
   background-color: #f4f4f4d3;
@@ -192,7 +197,7 @@ button {
 }
 
 .project-btn button {
-  padding: 5px 15px;
+  padding: 10px 15px;
   background-color: #ff6b00;
   color: #fff;
   margin-top: 10px;
@@ -468,25 +473,114 @@ button {
   }
 
   .projects {
-    display: flex;
     align-items: center;
     padding-top: 60px;
-    /* justify-content: space-around; */
+  }
+
+  .project-container {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
   }
 
   header h2 {
-    margin-left: 150px;
+    margin-left: 165px;
     font-size: 30px;
     font-weight: 500;
     color: #091e42;
   }
 
   .line {
-    width: 50%;
+    width: 60%;
   }
 
   .underline {
-    margin-left: -130px;
-    margin-top: 30px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  /* technologies section */
+
+  .technologies {
+    padding-top: 30px;
+  }
+
+  .technologies-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .frame {
+    flex: 1;
+  }
+
+  .frame img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .work-info {
+    flex: 1;
+  }
+
+  .card-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card1 {
+    background: url(d-images/card1.png) center / contain no-repeat;
+  }
+
+  .text-wrapper {
+    display: none;
+  }
+
+  .card-button {
+    margin-top: 101%;
+    width: 97%;
+    height: 40px;
+    margin-left: 7px;
+  }
+
+  .card2 {
+    background-image: url(./d-images/card2.png) center / contain no-repeat;
+  }
+
+  .about {
+    margin-left: 100px;
+    background-image: url(./d-images/big-frame.png);
+    background-position: 100% 30%;
+  }
+
+  .text-container1 {
+    font-size: 72px;
+    line-height: 81.5px;
+  }
+
+  .about .paragraph {
+    width: 566px;
+    height: 148px;
+    margin-bottom: 200px;
+  }
+
+  .about .paragraph p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .w-line {
+    width: 80%;
+    margin: 0 auto;
+    margin-right: 15%;
+  }
+
+  .tools {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
   }
 }

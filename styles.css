@@ -15,7 +15,7 @@
   --font-inter: "Inter", sans-serif;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 357px) {
   body {
     background-color: #1c1a19;
   }
@@ -28,6 +28,14 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
+  }
+
+  .logo {
+    transition: all 0.3s;
+  }
+
+  .logo:hover {
+    transform: rotateY(20deg);
   }
 
   .menu-bar {
@@ -275,17 +283,17 @@
   }
 
   .contact span button {
-    margin-top: 30px;
-    padding: 10px 15px;
     background-color: #ff6b00;
-    color: #fff;
-    font-size: 18px;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    text-align: center;
-    margin-left: 130px;
-    margin-bottom: 40px;
     border: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 17px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding: 15px 15px;
+    margin-bottom: 60px;
   }
 
   .about .paragraph button {
@@ -347,6 +355,63 @@
     padding-left: 15px;
   }
 
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .contact h5 {
+    font-size: 31px;
+    line-height: 45px;
+    font-weight: 700px;
+    color: #172b4d;
+    font-family: var(--font-inter);
+    text-justify: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form label {
+    padding-top: 20px;
+  }
+
+  .form label input {
+    border: none;
+    border-bottom: 1px solid #555;
+    width: 90%;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-family: var(--font-inter);
+    color: #555;
+  }
+
+  .form textarea {
+    width: 90%;
+    height: 110px;
+    background-color: rgba(224, 224, 224, 0.199);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    border: none;
+    margin: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .contact span {
+    text-align: center;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+  }
+
   /* hover effects */
 
   .card-button button:focus {
@@ -366,7 +431,7 @@
     background-color: #ff6b00;
     border: 1px solid #3c3a39;
     color: #fff;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease;
   }
 
   .about button:focus {
@@ -383,10 +448,28 @@
     transition: 0.5s;
   }
 
+  .contact span button:hover {
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s;
+  }
+
+  .contact span button:focus {
+    background-color: #ff6b00;
+    border: 1px solid #1c1a19;
+    color: #fff;
+    transition: 0.5s;
+  }
+
   .about .paragraph button:hover {
     background-color: #fdfadf;
     border: 1px solid #ff6b00;
     color: #ff6b00;
     transition: 0.5s;
+  }
+
+  .form textarea:hover {
+    border: 1px solid #555;
   }
 }

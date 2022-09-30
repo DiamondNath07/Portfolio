@@ -43,7 +43,7 @@ body {
   width: 100%;
   flex-direction: column;
   margin: 0 auto;
-  background-image: url(./d-images/bg\ img1.png);
+  background-image: url("./d-images/bg-img1.png");
   background-repeat: no-repeat;
   background-position: -150% -50%;
 }
@@ -218,7 +218,7 @@ button {
 .card1 {
   width: 100%;
   flex-direction: column;
-  background-image: url(./images/cards\ template.png);
+  background-image: url("./images/cards-template.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-color: #fff;
@@ -279,7 +279,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #1c1a19;
-  background-image: url(./images/Frame.png);
+  background-image: url("./images/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 120%;
 }
@@ -371,6 +371,63 @@ button {
   padding-left: 15px;
 }
 
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.contact h5 {
+  font-size: 31px;
+  line-height: 45px;
+  font-weight: 700px;
+  color: #172b4d;
+  font-family: var(--font-inter);
+  text-justify: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form label {
+  padding-top: 20px;
+}
+
+.form label input {
+  border: none;
+  border-bottom: 1px solid #555;
+  width: 90%;
+  font-size: 15px;
+  padding-left: 20px;
+  line-height: 50px;
+  font-family: var(--font-inter);
+  color: #555;
+}
+
+.form textarea {
+  width: 90%;
+  height: 110px;
+  background-color: rgba(224, 224, 224, 0.199);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  border: none;
+  margin: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.contact span {
+  text-align: center;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+}
+
 /* hover effects */
 
 .card-button button:focus {
@@ -451,7 +508,7 @@ button {
     height: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(./d-images/bg\ img1.png);
+    background-image: url("./d-images/bg-img1.png");
     background-position: 100% 50%;
   }
 
@@ -524,18 +581,19 @@ button {
     flex: 1;
   }
 
-  .card-container {
+  .cards {
     width: 80%;
     margin: 0 auto;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card1 {
-    background: url(d-images/card1.png) center / contain no-repeat;
+  .card-a {
+    background-image: url("./d-images/kard1.png");
   }
 
-  .text-wrapper {
+  .txt-wr-a {
     display: none;
   }
 
@@ -546,13 +604,19 @@ button {
     margin-left: 7px;
   }
 
-  .card2 {
-    background-image: url(./d-images/card2.png) center / contain no-repeat;
+  .card-b {
+    background-image: url("./d-images/card2.png");
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .card-c {
+    background-image: url("./d-images/card3.png");
   }
 
   .about {
     margin-left: 100px;
-    background-image: url(./d-images/big-frame.png);
+    background-image: url("./d-images/big-frame.png");
     background-position: 100% 30%;
   }
 

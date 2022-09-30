@@ -232,6 +232,12 @@ button {
   margin-left: 40px;
 }
 
+.txt-wr-a,
+.txt-wr-b,
+.txt-wr-c {
+  display: none;
+}
+
 .card1 h4 {
   padding-top: 40px;
   width: 70%;
@@ -552,7 +558,7 @@ button {
   }
 
   .underline {
-    margin-left: -120px;
+    margin-left: -50px;
     margin-top: 60px;
   }
 
@@ -586,22 +592,20 @@ button {
     margin: 0 auto;
     display: grid;
     align-items: center;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .card-a {
     background-image: url("./d-images/kard1.png");
-  }
-
-  .txt-wr-a {
-    display: none;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .card-button {
-    margin-top: 101%;
-    width: 97%;
+    width: 100%;
     height: 40px;
-    margin-left: 7px;
   }
 
   .card-b {
@@ -610,8 +614,80 @@ button {
     background-size: contain;
   }
 
+  .text-wrapper {
+    display: none;
+  }
+
+  .txt-wr-a,
+  .txt-wr-b,
+  .txt-wr-c {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .txt-wr-a p#ad {
+    padding-bottom: 50px;
+  }
+
+  .txt-wr-a .card-s button {
+    margin-left: -20px;
+    padding: 5px 127px;
+    background-color: #ff6b00;
+  }
+
+  .txt-wr-a h4,
+  .txt-wr-b h4,
+  .txt-wr-c h4 {
+    font-size: 28px;
+    line-height: 44px;
+    margin-top: 80px;
+  }
+
+  .txt-wr-a .techs,
+  .txt-wr-b .techs,
+  .txt-wr-c .techs,
+  .txt-wr-d .techs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .txt-wr-a .techs li,
+  .txt-wr-b .techs li,
+  .txt-wr-c .techs li,
+  .txt-wr-d .techs li {
+    padding-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .txt-wr-a .techs li a,
+  .txt-wr-b .techs li a,
+  .txt-wr-c .techs li a,
+  .txt-wr-d .techs li a {
+    background-color: rgba(255, 255, 255, 0.24);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 5px;
+  }
+
+  .card-b button,
+  .card-c button {
+    display: none;
+  }
+
   .card-c {
     background-image: url("./d-images/card3.png");
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .card-d {
+    background-image: url("./d-images/ncad.png");
+    background-position: 50% 50%;
+    background-size: contain;
   }
 
   .about {
@@ -646,5 +722,22 @@ button {
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .interest {
+    flex: 1;
+  }
+
+  .interest h5 {
+    text-align: left;
+  }
+
+  .form {
+    flex: 1;
   }
 }

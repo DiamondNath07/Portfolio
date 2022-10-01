@@ -444,6 +444,7 @@ form p {
 }
 
 /* hover effects */
+
 .project-btn button:hover {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
@@ -451,18 +452,6 @@ form p {
 }
 
 .card-bot button:hover {
-  background-color: #fdfadf;
-  border: 1px solid #ff6b00;
-  color: #ff6b00;
-}
-
-.caad-btn button:hover {
-  background-color: #fdfadf;
-  border: 1px solid #ff6b00;
-  color: #ff6b00;
-}
-
-.caad-btn button {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
   color: #ff6b00;
@@ -790,23 +779,6 @@ form p {
   /* .caad-btn {
     display: none;
   } */
-
-  .btn-botom span {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .btn-botom span:hover {
-    display: block;
-  }
-
-  .btn-botom span input {
-    width: 100%;
-    background-color: red;
-  }
 
   /* .btn-botom button:hover {
     display: block;

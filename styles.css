@@ -464,6 +464,14 @@ form p {
   color: #ff6b00;
 }
 
+.card3:hover,
+.card2:hover,
+.card1:hover,
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
 .caad-btn button:hover {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;

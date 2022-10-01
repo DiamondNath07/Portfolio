@@ -462,6 +462,12 @@ form p {
   color: #ff6b00;
 }
 
+.caad-btn button {
+  background-color: #fdfadf;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
 .project-btn button:focus {
   background-color: #ff6b00;
   border: 1px solid #3c3a39;
@@ -658,6 +664,23 @@ form p {
     height: 465px;
     background-image: url("./d-images/card2.png");
     background-size: cover;
+    position: relative;
+  }
+
+  .card2:hover {
+    filter: grayscale(100%);
+  }
+
+  .card2 span {
+    display: none;
+    position: absolute;
+    left: 75px;
+    top: 95px;
+  }
+
+  .card2 span:hover {
+    display: block;
+    background-color: red;
   }
 
   .card-info {
@@ -760,16 +783,38 @@ form p {
     line-height: 32px;
   }
 
-  .ccad {
+  /* .ccad {
     position: relative;
-  }
+  } */
 
-  .btn-botom {
+  /* .caad-btn {
+    display: none;
+  } */
+
+  .btn-botom span {
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
   }
+
+  .btn-botom span:hover {
+    display: block;
+  }
+
+  .btn-botom span input {
+    width: 100%;
+    background-color: red;
+  }
+
+  /* .btn-botom button:hover {
+    display: block;
+  } */
+
+  /* .caad-btn:hover {
+    display: block;
+  } */
 
   .w-line {
     width: 80%;

@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 
 * {
   padding: 0;
@@ -651,7 +650,7 @@ form p {
     font-weight: 600;
     color: #fff;
     border: none;
-    transition: 0.5s;
+    transition: 0.4s;
   }
 
   .card2 {
@@ -733,27 +732,6 @@ form p {
     height: 465px;
     background-image: url("./d-images/card1.png");
     background-size: cover;
-  }
-
-  .card-info {
-    margin-top: 200px;
-    padding: 0 20px;
-  }
-
-  .card-info p#note {
-    font-family: "Crete Round", serif;
-    font-size: 32px;
-    line-height: 44px;
-    letter-spacing: 0.5px;
-    color: #fff;
-  }
-
-  .card-info p {
-    font-family: var(--font-inter);
-    font-size: 17px;
-    padding-top: 15px;
-    line-height: 24px;
-    color: #fff;
   }
 
   .about {

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 
 * {
   padding: 0;
@@ -183,7 +184,7 @@ form p {
   margin-top: 10px;
 }
 
-button {
+.btn button {
   padding: 5px 10px;
   margin-right: 10px;
   font-size: 18px;
@@ -210,77 +211,6 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-.cards {
-  width: 100%;
-  background-color: #fff;
-}
-
-.card1 {
-  width: 100%;
-  flex-direction: column;
-  background-image: url("./images/cards-template.png");
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-color: #fff;
-  padding-top: 20px;
-  background-size: 90% 100%;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-
-.text-wrapper {
-  margin-left: 40px;
-}
-
-.txt-wr-a,
-.txt-wr-b,
-.txt-wr-c {
-  display: none;
-}
-
-.card1 h4 {
-  padding-top: 40px;
-  width: 70%;
-  font-family: var(--font-crete);
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 28px;
-  color: #fff;
-}
-
-.card1 p {
-  margin-top: 10px;
-  width: 70%;
-  font-family: var(--font-inter);
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.card1 button {
-  margin-top: 10px;
-  color: #fff;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400px;
-  background-color: #555;
-  border: none;
-}
-
-.card-button {
-  margin-left: 20px;
-  width: 90%;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.card-button button {
-  width: 100%;
-  background-color: #ff6b00;
-  padding-bottom: 10px;
-}
-
 .about {
   width: 100%;
   height: 100%;
@@ -291,7 +221,8 @@ button {
 }
 
 .about h1 {
-  font-size: 72px;
+  font-size: 65px;
+  line-height: 82px;
   padding-bottom: 0;
   padding-top: 40px;
 }
@@ -304,18 +235,93 @@ button {
   letter-spacing: 0.5;
 }
 
-.contact span button {
+.pro-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.caad {
+  width: 327px;
+  height: 386px;
+  background-image: url("./d-images/card1.png");
+  margin-top: 10px;
+  background-size: cover;
+}
+
+.write-up {
+  padding: 0 20px;
+}
+
+.write-up p#title {
+  font-family: "Crete Round", serif;
+  font-size: 32px;
+  padding-top: 80px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.write-up p {
+  font-family: var(--font-inter);
+  font-size: 17px;
+  padding-top: 15px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.lang {
+  display: flex;
   margin-top: 30px;
-  padding: 10px 15px;
+}
+
+.lang li {
+  list-style: none;
+  padding-right: 10px;
+}
+
+.lang li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 8px;
+}
+
+.caad-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.caad-btn button {
+  background: #ff6b00;
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  transition: 0.5s;
+}
+
+.carrd {
+  display: none;
+}
+
+.contact span button {
+  padding: 10px 8px;
   background-color: #ff6b00;
   color: #fff;
-  font-size: 18px;
+  margin-top: 5px;
+  font-size: 17px;
+  line-height: 24px;
   font-family: var(--font-inter);
   font-weight: 600;
   text-align: center;
-  margin-left: 130px;
   margin-bottom: 40px;
   border: none;
+  transition: 0.5s;
 }
 
 .about .paragraph button {
@@ -407,6 +413,7 @@ button {
 .form label input {
   border: none;
   border-bottom: 1px solid #555;
+  outline: none;
   width: 90%;
   font-size: 15px;
   padding-left: 20px;
@@ -421,8 +428,10 @@ button {
   background-color: rgba(224, 224, 224, 0.199);
   font-family: var(--font-inter);
   font-size: 14px;
+  outline: none;
   border: none;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding-top: 16px;
   padding-left: 20px;
 }
@@ -436,14 +445,19 @@ button {
 
 /* hover effects */
 
-.card-button button:focus {
+.project-btn button:hover {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
   color: #ff6b00;
-  transition: 0.5s;
 }
 
-.project-btn button:hover {
+.card-bot button:hover {
+  background-color: #fdfadf;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.caad-btn button:hover {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
   color: #ff6b00;
@@ -463,11 +477,10 @@ button {
   transition: 0.5s;
 }
 
-.card-button button:hover {
+.contact span button:hover {
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
   color: #ff6b00;
-  transition: 0.5s;
 }
 
 .about .paragraph button:hover {
@@ -483,9 +496,20 @@ button {
   }
 
   /* navbar */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 100px;
+  }
 
   .navlinks {
     display: block;
+    align-items: center;
+    margin-right: 150px;
   }
 
   .links-icons {
@@ -497,10 +521,10 @@ button {
   .links-icons li a {
     text-decoration: none;
     padding-left: 40px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     font-family: var(--font-inter);
-    font-weight: 700px;
+    font-weight: 600;
     color: #fff;
   }
 
@@ -586,106 +610,150 @@ button {
     flex: 1;
   }
 
-  .cards {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    align-items: center;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card-a {
-    background-image: url("./d-images/kard1.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .card-button {
-    width: 100%;
-    height: 40px;
-  }
-
-  .card-b {
-    background-image: url("./d-images/card2.png");
-    background-position: 50% 50%;
-    background-size: contain;
-  }
-
-  .text-wrapper {
+  .caad {
     display: none;
   }
 
-  .txt-wr-a,
-  .txt-wr-b,
-  .txt-wr-c {
+  .carrd {
     display: block;
-    margin-left: 30px;
+    text-align: center;
   }
 
-  .txt-wr-a p#ad {
-    padding-bottom: 50px;
+  .cards {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: var(--font-inter);
   }
 
-  .card-b button,
-  .card-c button {
-    display: none;
+  .card {
+    width: 369px;
+    height: 465px;
+    background-image: url("./d-images/card.png");
+    background-size: cover;
+    box-shadow: 0 0 1px #555;
   }
 
-  .txt-wr-a .card-s button {
-    margin-left: -20px;
-    padding: 5px 127px;
-    background-color: #ff6b00;
+  .card-bot {
+    width: 100%;
+    margin-top: 420px;
+    text-align: center;
   }
 
-  .txt-wr-a h4,
-  .txt-wr-b h4,
-  .txt-wr-c h4 {
-    font-size: 28px;
-    line-height: 44px;
-    margin-top: 80px;
-  }
-
-  .txt-wr-a .techs,
-  .txt-wr-b .techs,
-  .txt-wr-c .techs,
-  .txt-wr-d .techs {
-    display: flex;
-    justify-content: center;
-  }
-
-  .txt-wr-a .techs li,
-  .txt-wr-b .techs li,
-  .txt-wr-c .techs li,
-  .txt-wr-d .techs li {
-    padding-top: 10px;
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
-    padding-bottom: 20px;
-  }
-
-  .txt-wr-a .techs li a,
-  .txt-wr-b .techs li a,
-  .txt-wr-c .techs li a,
-  .txt-wr-d .techs li a {
-    background-color: rgba(255, 255, 255, 0.24);
+  .card-bot button {
+    background: #ff6b00;
+    width: 100%;
+    padding: 12px 12px;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
     color: #fff;
+    border: none;
+    transition: 0.5s;
+  }
+
+  .card2 {
+    width: 369px;
+    height: 465px;
+    background-image: url("./d-images/card2.png");
+    background-size: cover;
+  }
+
+  .card-info {
+    margin-top: 200px;
+    padding: 0 20px;
+  }
+
+  .card-info p#note {
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+
+  .card-info p {
+    font-family: var(--font-inter);
+    font-size: 17px;
+    padding-top: 15px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .card-links {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .card-links li {
+    list-style: none;
+    padding-right: 10px;
+  }
+
+  .card-links li a {
     text-decoration: none;
-    padding: 5px 5px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 8px;
   }
 
-  .card-c {
+  .card3 {
+    width: 369px;
+    height: 465px;
     background-image: url("./d-images/card3.png");
-    background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
   }
 
-  .card-d {
-    background-image: url("./d-images/ncad.png");
-    background-position: 50% 50%;
-    background-size: contain;
+  .card-info3 {
+    margin-top: 245px;
+    padding: 0 20px;
+  }
+
+  .card-info3 p#note {
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+
+  .card-info3 p {
+    font-family: var(--font-inter);
+    font-size: 17px;
+    padding-top: 15px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .card1 {
+    width: 369px;
+    height: 465px;
+    background-image: url("./d-images/card1.png");
+    background-size: cover;
+  }
+
+  .card-info {
+    margin-top: 200px;
+    padding: 0 20px;
+  }
+
+  .card-info p#note {
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+
+  .card-info p {
+    font-family: var(--font-inter);
+    font-size: 17px;
+    padding-top: 15px;
+    line-height: 24px;
+    color: #fff;
   }
 
   .about {
@@ -722,20 +790,30 @@ button {
     margin-top: 80px;
   }
 
+  .contact {
+    display: block;
+    text-align: start;
+  }
+
   .contact-container {
     display: flex;
     justify-content: space-between;
   }
 
   .interest {
-    flex: 1;
+    flex: 0.7;
   }
 
   .interest h5 {
     text-align: left;
+    padding-left: 100px;
+    font-size: 35px;
+    line-height: 45px;
+    color: #262626;
   }
 
   .form {
     flex: 1;
+    margin-left: 40px;
   }
 }

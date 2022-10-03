@@ -194,6 +194,7 @@
   .card1 {
     width: 100%;
     flex-direction: column;
+    float: left;
     background-image: url(./images/cards\ template.png);
     background-repeat: no-repeat;
     background-position: 50% 100%;

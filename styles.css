@@ -452,9 +452,11 @@ form p {
 }
 
 .card-bot button:hover {
+  display: block;
   background-color: #fdfadf;
   border: 1px solid #ff6b00;
   color: #ff6b00;
+  transition: 0.5s ease;
 }
 
 .project-btn button:focus {
@@ -626,6 +628,67 @@ form p {
     background-image: url("./d-images/card.png");
     background-size: cover;
     box-shadow: 0 0 1px #555;
+    border: none;
+  }
+
+  .card-bot button {
+    background: #ff6b00;
+    width: 100%;
+    height: 10%;
+    padding: 12px 12px;
+    display: none;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+  }
+
+  .card-bot1 button {
+    background: #ff6b00;
+    width: 100%;
+    height: 10%;
+    padding: 12px 12px;
+    display: none;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+  }
+
+  .card-bot3 button {
+    background: #ff6b00;
+    width: 100%;
+    height: 10%;
+    padding: 12px 12px;
+    display: none;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+  }
+
+  .card-bot1 button:hover {
+    display: block;
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s ease;
+  }
+
+  .card-bot3 button:hover {
+    display: block;
+    background-color: #fdfadf;
+    border: 1px solid #ff6b00;
+    color: #ff6b00;
+    transition: 0.5s ease;
+  }
+
+  .card:hover .card-bot button {
+    display: block;
+    transition: 3s ease;
   }
 
   .card-bot {
@@ -634,18 +697,25 @@ form p {
     text-align: center;
   }
 
-  .card-bot button {
-    background: #ff6b00;
+  .card-bot1 {
     width: 100%;
-    height: 10%;
-    padding: 12px 12px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
-    /* margin-top: 400px; */
-    font-family: var(--font-inter);
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
+  .card-bot3 {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .card2:hover .card-bot1 button,
+  .card3:hover .card-bot3 button,
+  .card1:hover .card-bot1 button {
+    display: block;
+    transition: 3s ease;
     border: none;
+    z-index: 2;
   }
 
   .card2 {
@@ -654,22 +724,6 @@ form p {
     background-image: url("./d-images/card2.png");
     background-size: cover;
     position: relative;
-  }
-
-  .card2:hover {
-    filter: grayscale(100%);
-  }
-
-  .card2 span {
-    display: none;
-    position: absolute;
-    left: 75px;
-    top: 95px;
-  }
-
-  .card2 span:hover {
-    display: block;
-    background-color: red;
   }
 
   .card-info {

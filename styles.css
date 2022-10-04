@@ -356,7 +356,7 @@ form p {
   padding-bottom: 30px;
 }
 
-.tools ul li {
+.items li {
   list-style: none;
   font-size: 22px;
   line-height: 43px;
@@ -441,6 +441,36 @@ form p {
   align-items: center;
   place-items: center;
   justify-content: center;
+}
+
+.link-tags {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.icon-tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.icon-tags li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.tag-line {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.icon-line {
+  width: 30%;
+  border: 2px solid #1c1a19;
+  background-color: #1c1a19;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 /* hover effects */

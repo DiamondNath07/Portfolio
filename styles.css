@@ -880,10 +880,13 @@ form p {
     flex: 1;
     margin-left: 40px;
   }
-  
+
   .frame img:hover {
-    transform:scale(1.1);
-    transition: all .5s ease;
- }
-    
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+
+  .tag-line {
+    display: none;
+  }
 }

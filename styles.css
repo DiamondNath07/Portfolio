@@ -42,21 +42,17 @@ body {
 
 .intro-section {
   width: 100%;
+  height: 700px;
   flex-direction: column;
   margin: 0 auto;
   background-image: url("./d-images/bg-img1.png");
   background-repeat: no-repeat;
-  background-position: -150% -50%;
-}
-
-.text-container1 {
-  width: clamp(327px, 30vw, 1440px);
-  height: clamp(124px, 20vh, 870px);
+  background-position: -50% -190%;
 }
 
 h1 {
   font-family: "Crete Round", serif;
-  font-size: clamp(56px, 10vw, 72px);
+  font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.37px;
@@ -66,25 +62,22 @@ h1 {
 }
 
 .paragraph #sub-p {
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 32px;
   font-family: var(--font-inter);
   color: var(--font-icon-primary-color);
-  font-weight: 500;
-  padding-bottom: 10px;
+  font-weight: 600;
   letter-spacing: 0.9px;
 }
 
 .paragraph {
-  width: clamp(327px, 70vw, 566px);
-  font-size: clamp(16px, 30vw, 20px);
-  line-height: clamp(24px, 20vh, 32px);
+  font-size: 16px;
+  line-height: 24px;
   font-family: var(--font-inter);
   color: var(--font-icon-primary-color);
   font-weight: 400;
-  padding-left: 35px;
+  padding: 5px 10px 10px 30px;
   letter-spacing: 0.5px;
-  padding-top: 5px;
   z-index: 1;
 }
 
@@ -564,12 +557,31 @@ form p {
   }
 
   /* intro-section */
+
   .intro-section {
     height: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url("./d-images/bg-img1.png");
-    background-position: 100% 50%;
+    background-position: 100% 200%;
+    background-size: 50% ;
+  }
+
+  h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 81.5px;
+  }
+
+  .paragraph #sub-p {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+  }
+
+  .paragraph {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .intro-writeup {
@@ -923,5 +935,14 @@ form p {
 
   .tag-line {
     display: none;
+  }
+}
+
+@media (min-width : 1100px) {
+  .intro-section {
+   
+    background-image: url("./d-images/bg-img1.png");
+    background-position: 40 50%;
+    background-size: contain;
   }
 }

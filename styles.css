@@ -17,7 +17,7 @@
 
 body {
   background-color: #1c1a19;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 .nav {
@@ -29,15 +29,75 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
+  padding: 10px 0;
+  position: relative;
+}
+
+.logo p {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #979493;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-left: -20px;
 }
 
 .menu-bar {
-  margin-top: 10px;
-  padding-right: 20px;
+  margin-left: 100px;
 }
 
 .navlinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c3a39;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  padding: 20px 20px 0 20px;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+}
+
+.navlinks .close-btn {
+  width: 40px;
+  float: right;
+  border-bottom: 1px solid #3c3a39;
+  transition: all 1s ease-in-out;
+}
+
+.navlinks .close-btn:hover {
+  transform: rotate(360deg);
+}
+
+.links-icons li {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.links-icons li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  line-height: 55px;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  padding-left: 15px;
+  letter-spacing: 0.9px;
+}
+
+.links-icons li#msg {
   display: none;
+}
+
+.showNav {
+  transform: translateX(0);
 }
 
 .intro-section {
@@ -530,16 +590,61 @@ form p {
     padding-left: 100px;
   }
 
+  /* .navlinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c3a39;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  padding: 20px 20px 0 20px;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+}
+
+.links-icons li {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.links-icons li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  line-height: 55px;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  padding-left: 15px;
+  letter-spacing: 0.9px;
+}
+
+.links-icons li#msg {
+  display: none;
+}
+ */
+
   .navlinks {
-    display: block;
+    display: flex;
     align-items: center;
     margin-right: 150px;
+  }
+
+  .showNav {
+    width: 0;
   }
 
   .links-icons {
     display: flex;
     align-items: center;
     list-style: none;
+  }
+
+  .links-icons li .close-btn {
+    display: none;
   }
 
   .links-icons li a {

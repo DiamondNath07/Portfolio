@@ -15,6 +15,10 @@
   --font-inter: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1c1a19;
   overflow-x: none;
@@ -34,6 +38,12 @@ body {
 
 .menu-bar {
   margin-left: 100px;
+}
+
+links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
 }
 
 .navlinks {
@@ -590,42 +600,9 @@ form p {
     padding-left: 100px;
   }
 
-  /* .navlinks {
-  display: flex;
-  flex-direction: column;
-  background-color: #3c3a39;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0vh;
-  right: 0;
-  padding: 20px 20px 0 20px;
-  transform: translateX(100%);
-  transition: all 1s ease-in-out;
-}
-
-.links-icons li {
-  list-style: none;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: 2px solid #6f6c6b;
-}
-
-.links-icons li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 32px;
-  line-height: 55px;
-  font-weight: 700;
-  font-family: var(--font-inter);
-  padding-left: 15px;
-  letter-spacing: 0.9px;
-}
-
-.links-icons li#msg {
-  display: none;
-}
- */
+ links-container {
+  height: auto;
+ }
 
   .navlinks {
     display: flex;

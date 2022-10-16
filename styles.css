@@ -564,7 +564,7 @@ form p {
     padding-bottom: 50px;
     background-image: url("./d-images/bg-img1.png");
     background-position: 100% 200%;
-    background-size: 50% ;
+    background-size: 50%;
   }
 
   h1 {
@@ -938,9 +938,8 @@ form p {
   }
 }
 
-@media (min-width : 1100px) {
+@media (min-width: 1100px) {
   .intro-section {
-   
     background-image: url("./d-images/bg-img1.png");
     background-position: 40 50%;
     background-size: contain;

@@ -30,10 +30,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  /* position: fixed; */
   top: 0;
-  z-index: 1;
+  /* z-index: 1; */
   padding: 10px 0;
   padding-left: 30px;
 }
@@ -138,7 +136,7 @@ h1 {
   font-weight: 400;
   padding: 5px 10px 10px 30px;
   letter-spacing: 0.5px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .links {
@@ -371,13 +369,16 @@ form p {
 
 .modal-overlay {
   width: 100%;
-  padding: 20px 10px;
+  height: 100%;
+  display: grid;
+  padding: 80px 0 0 20px;
   background-color: #000;
   position: fixed;
-  /* visibility: hidden;
-  z-index: -10; */
+  visibility: hidden;
+  z-index: -10;
   top: 0;
   left: 0;
+  right: 0;
 }
 
 .open-modal {
@@ -386,12 +387,13 @@ form p {
 }
 
 .modal-container {
+  background: #fff;
   width: 90vw;
-  margin: 0 auto;
+  height: 80vh;
   max-width: 620px;
-  background-color: #fff;
-  padding: 10px;
+  display: grid;
   position: relative;
+  padding: 20px;
 }
 
 .modal-title {
@@ -446,7 +448,7 @@ span#bur {
   color: #fff;
   border: none;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .export {
@@ -462,8 +464,8 @@ span#bur {
   color: #fff;
   border: none;
   text-transform: capitalize;
-  font-size: 16px;
-  margin-left: 30px;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .github {
@@ -967,7 +969,7 @@ span#bur {
     display: block;
     transition: 3s ease;
     border: none;
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   .card2 {
@@ -975,7 +977,7 @@ span#bur {
     height: 465px;
     background-image: url('./d-images/card2.png');
     background-size: cover;
-    position: relative;
+    /* position: relative; */
   }
 
   .card-info {
@@ -1076,22 +1078,6 @@ span#bur {
     font-size: 20px;
     line-height: 32px;
   }
-
-  /* .ccad {
-    position: relative;
-  } */
-
-  /* .caad-btn {
-    display: none;
-  } */
-
-  /* .btn-botom button:hover {
-    display: block;
-  } */
-
-  /* .caad-btn:hover {
-    display: block;
-  } */
 
   .w-line {
     width: 80%;

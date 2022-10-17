@@ -36,4 +36,14 @@ scrollLinks.forEach((item) => {
 
 // modal effect
 
-// const modalBtn = document.querySelector('')
+const modalBtn = document.querySelector('.modal-btn');
+const modal = document.querySelector('.modal-overlay');
+const xIcon = document.querySelector('.x-icon');
+
+modalBtn.addEventListener('click', () => {
+  modal.classList.add('open-modal');
+});
+
+xIcon.addEventListener('click', () => {
+  modal.classList.remove('open-modal');
+});

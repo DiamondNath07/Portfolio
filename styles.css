@@ -97,6 +97,7 @@ body {
 
 .showNav {
   transform: translateX(0);
+  position: fixed;
 }
 
 .intro-section {
@@ -366,6 +367,110 @@ form p {
   color: #fff;
   border: none;
   transition: 0.5s;
+}
+
+.modal-overlay {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #000;
+  position: fixed;
+  /* visibility: hidden;
+  z-index: -10; */
+  top: 0;
+  left: 0;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 620px;
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 24px;
+  line-height: 44px;
+  color: #172b4d;
+  font-weight: 700;
+  font-family: var(--font-inter);
+}
+
+.x-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.modal-links {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.modal-links li {
+  list-style: none;
+  border: 1px solid #262626;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.popimg {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.modal-container p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: var(--font-inter);
+  margin-bottom: 20px;
+}
+
+span#bur {
+  position: relative;
+}
+
+.burtin1 {
+  padding: 10px 45px 10px 10px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.export {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.burtin2 {
+  padding: 10px 45px 10px 10px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.github {
+  width: 15px;
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 .carrd {

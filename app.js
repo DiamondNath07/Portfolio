@@ -33,3 +33,7 @@ scrollLinks.forEach((item) => {
     });
   });
 });
+
+// modal effect
+
+// const modalBtn = document.querySelector('')

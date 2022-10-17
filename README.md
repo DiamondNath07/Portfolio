@@ -30,7 +30,7 @@ To run this project locally, make sure you have done the following:
 ## Authors
 
 👤 **Diamond Nathaniel I**
-👤 **Ahmed Moshen**
+
 
 - GitHub: [@DiamondNath07](https://github.com/DiamondNath07)
 - Twitter: [@DiamondNath07](https://twitter.com/@diamondNath07)

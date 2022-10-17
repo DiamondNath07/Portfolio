@@ -18,8 +18,8 @@ CloseBtn.addEventListener('click', () => {
 const scrollLinks = document.querySelectorAll('.scroll-links');
 
 scrollLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    const id = e.currentTarget.getAttribute('href').slice(1);
+  link.addEventListener('click', (a) => {
+    const id = a.currentTarget.getAttribute('href').slice(1);
     const element = document.getElementById(id);
     const position = element.offsetTop;
 

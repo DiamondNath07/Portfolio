@@ -30,17 +30,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
+
+  /* position: fixed; */
   top: 0;
   z-index: 1;
   padding: 10px 0;
+  padding-left: 30px;
 }
 
 .menu-bar {
-  margin-left: 100px;
+  margin-left: 160px;
 }
 
-links-container {
+.links-container {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -594,15 +596,16 @@ form p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
   }
 
   .logo {
     padding-left: 100px;
   }
 
- links-container {
-  height: auto;
- }
+  .links-container {
+    height: auto;
+  }
 
   .navlinks {
     display: flex;
@@ -949,7 +952,6 @@ form p {
   }
 
   .about {
-    margin-left: 100px;
     background-image: url("./d-images/big-frame.png");
     background-position: 100% 30%;
   }

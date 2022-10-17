@@ -23,13 +23,15 @@ const linksContainer = document.querySelector(".links-container");
 
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
 
-    const navHeight = navbar.getBoundingClientRect().height;
-    const containerHeight = linksContainer.getBoundingClientRect().height;
+    if (id) {
+      navLinks.classList.remove("showNav");
+    }
+    
 
     let position = element.offsetTop;
 
@@ -37,17 +39,5 @@ scrollLinks.forEach((link) => {
       left: 0,
       top: position,
     });
-
-    // close menu
-    linksContainer.style.height = 0;
-    linksContainer.style.width = 0;
   });
 });
-
- const linksHeight = links.getBoundingClientRect().height;
- const containerHeight = linksContainer.getBoundingClientRect().height;
- if (containerHeight === 0) {
-   linksContainer.style.height = `${linksHeight}px`;
- } else {
-   linksContainer.style.height = 0;
- }

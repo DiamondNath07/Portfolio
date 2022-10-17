@@ -4,25 +4,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/1386e30197.js" crossorigin="anonymous"></script>
+ 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   <link rel="stylesheet" href="./styles.css" />
   <title>Portfolio</title>
 </head>
 <body>
   <nav class="nav">
     <div class="logo">
-      <a href="#"><img src="./images/Logo Placeholder.png" alt="logo" /></a>
+      <p id="name">Diamond</p>
     </div>
     <div class="menu-bar">
       <img src="./images/waifi.png" alt="menu" />
     </div>
-    <div class="navlinks">
+    <div class="links-container">
+      <div class="navlinks">
+      <span><img class="close-btn" src="./d-images/close-btn.png" alt="close-btn"></span>
       <ul class="links-icons">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://diamondnathaniel2@gmail.com/" target="_blank"><img src="./d-images/mg-icon.png" alt="msg"></a></li>
+        <li><a class="scroll-links" href="#portfolio">Portfolio</a></li>
+        
+        <li><a class="scroll-links" href="#about">About</a></li> 
+        <li><a class="scroll-links" href="#contact">Contact</a></li>
+        <li id="msg"><a  href="http://diamondnathaniel2@gmail.com/" target="_blank"><img src="./d-images/mg-icon.png" alt="msg"></a></li>
       </ul>
+    </div>
     </div>
   </nav>
   <section class="intro-section">
@@ -56,7 +64,7 @@
     </div>
   </section>
   <main>
-    <section id="portfolio" class="projects">
+    <section  class="projects">
       <div class="project-container">
         <header>
           <h2>My Recent Works</h2>
@@ -88,7 +96,7 @@
         </article>
       </div>
     </section>
-     <section class="pro-cards">
+     <section id="portfolio"  class="pro-cards">
     <div class="caad">
       <div class="write-up">
         <p id="title">Profesional Art Printing Data</p>
@@ -358,6 +366,7 @@
       </div>
     </div>
   </footer>
+  <script src="./app.js"></script>
 </body>
 
 </html>

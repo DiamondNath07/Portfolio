@@ -34,6 +34,52 @@ scrollLinks.forEach((item) => {
   });
 });
 
+// cards object
+const kardsObj = [
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+  {
+    id: 1,
+    mainText: 'Profesional Art Printing Data',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    techStack: ['html', 'bootstrap', 'Ruby'],
+  },
+];
+
 // modal effect
 
 const projectList = [
@@ -116,48 +162,81 @@ const modal = document.querySelector('.modal-overlay');
 const xIcon = document.querySelector('.x-icon');
 const projects = document.querySelector('#portfolio');
 
-projectList.map(
-  ({
-    id,
-    modalTitle,
-    links,
-    projectImg,
-    text,
-    summary,
-    livecode,
-    sourcecode,
-  }) => {
-    const element = document.createElement('div');
-    const att = document.createAttribute('class');
-    att.value = 'caad';
-    element.setAttributeNode(att);
-    element.innerHTML = `
+// projectList.map(
+//   ({
+//     id,
+//     modalTitle,
+//     links,
+//     projectImg,
+//     text,
+//     summary,
+//     livecode,
+//     sourcecode,
+//   }) => {
+//     const element = document.createElement('div');
+//     const att = document.createAttribute('class');
+//     att.value = 'caad';
+//     element.setAttributeNode(att);
+//     element.innerHTML = `
+//  <div class="write-up">
+//         <p id="title">${modalTitle}</p>
+//         <p>${summary}</p>
+//         <ul class="lang">
+//           <li><a href="#">${links[0]}</a></li>
+//           <li><a href="#">${links[1]}</a></li>
+//           <li><a href="#">${links[2]}</a></li>
+//         </ul>
+//         </div>
+//         <div class="caad-btn">
+//           <button type="button" class="modal-btn" >See Project</button>
+//         </div>
+// `;
+//     projects.appendChild(element);
+//     const modalBtn = document.querySelectorAll('.modal-btn');
+//     modalBtn.forEach((btn) => {
+//       btn.addEventListener('click', () => {
+//         modal.classList.add('open-modal');
+//         // do something
+//       });
+
+//       xIcon.addEventListener('click', () => {
+//         modal.classList.remove('open-modal');
+//       });
+//     });
+//   }
+// );
+
+kardsObj.map(({ id, mainText, description, techStack }) => {
+  const element = document.createElement('div');
+  const att = document.createAttribute('class');
+  att.value = 'caad';
+  element.setAttributeNode(att);
+  element.innerHTML = `
  <div class="write-up">
-        <p id="title">${modalTitle}</p>
-        <p>${summary}</p>
+        <p id="title">${mainText}</p>
+        <p>${description}</p>
         <ul class="lang">
-          <li><a href="#">${links[0]}</a></li>
-          <li><a href="#">${links[1]}</a></li>
-          <li><a href="#">${links[2]}</a></li>
+          <li><a href="#">${techStack[0]}</a></li>
+          <li><a href="#">${techStack[1]}</a></li>
+          <li><a href="#">${techStack[2]}</a></li>
         </ul>
         </div>
         <div class="caad-btn">
           <button type="button" class="modal-btn" >See Project</button>
         </div>
 `;
-    projects.appendChild(element);
-    const modalBtn = document.querySelectorAll('.modal-btn');
-    modalBtn.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        modal.classList.add('open-modal');
-        // do something
-      });
-
-      xIcon.addEventListener('click', () => {
-        modal.classList.remove('open-modal');
-      });
+  projects.appendChild(element);
+  const modalBtn = document.querySelectorAll('.modal-btn');
+  modalBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('open-modal');
+      // do something
     });
-  }
-);
+
+    xIcon.addEventListener('click', () => {
+      modal.classList.remove('open-modal');
+    });
+  });
+});
 
 // console.log(element);

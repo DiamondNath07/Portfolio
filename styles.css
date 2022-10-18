@@ -488,6 +488,10 @@ span#bur {
   display: none;
 }
 
+/* .modal-overlay2 {
+  display: none;
+} */
+
 .contact span button {
   padding: 10px 8px;
   background-color: #ff6b00;
@@ -1134,6 +1138,130 @@ span#bur {
 
   .tag-line {
     display: none;
+  }
+
+  .modal-overlay2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 80px 0 0 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    visibility: hidden;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .open-modalbg {
+    visibility: visible;
+    z-index: 10;
+  }
+
+  .modal-container {
+    display: none;
+    background: #fff;
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+
+  .modal-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    line-height: 44px;
+    color: #172b4d;
+    font-weight: 700;
+    font-family: var(--font-inter);
+  }
+
+  .xclose-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  .modal-links {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .modal-links li {
+    list-style: none;
+    border: 1px solid #262626;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .project-imgContainer {
+    flex: 1;
+  }
+
+  .popimg {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .modal-container p {
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--font-inter);
+    margin-bottom: 20px;
+  }
+
+  span#bur {
+    position: relative;
+  }
+
+  .burtin1 {
+    padding: 10px 45px 10px 10px;
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+
+  .export {
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+
+  .burtin2 {
+    padding: 10px 45px 10px 10px;
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .github {
+    width: 15px;
+    position: absolute;
+    right: 20px;
+    top: 0;
   }
 }
 

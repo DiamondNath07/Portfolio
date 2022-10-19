@@ -488,9 +488,9 @@ span#bur {
   display: none;
 }
 
-/* .modal-overlay2 {
+.modal-overlay2 {
   display: none;
-} */
+}
 
 .contact span button {
   padding: 10px 8px;
@@ -1164,14 +1164,14 @@ span#bur {
   .modal-container {
     display: none;
     background: #fff;
-    width: 90vw;
-    height: 80vh;
+    width: 80vw;
+    height: 90vh;
     display: grid;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 30px;
   }
 
   .modal-wrapper {
@@ -1181,11 +1181,11 @@ span#bur {
   }
 
   .modal-title {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    font-weight: 700;
-    font-family: var(--font-inter);
+    font-weight: 400;
+    font-family: var(--font-crete);
   }
 
   .xclose-icon {
@@ -1197,8 +1197,8 @@ span#bur {
   .modal-links {
     display: flex;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .modal-links li {
@@ -1211,7 +1211,7 @@ span#bur {
   }
 
   .project-imgContainer {
-    flex: 1;
+    width: 550px;
   }
 
   .popimg {
@@ -1220,15 +1220,19 @@ span#bur {
   }
 
   .modal-container p {
-    float: left;
-    font-size: 14px;
-    line-height: 22px;
+    max-width: 426px;
+    font-size: 16px;
+    line-height: 30px;
     font-family: var(--font-inter);
     margin-bottom: 20px;
   }
 
   span#bur {
-    position: relative;
+    position: absolute;
+    right: 380px;
+    bottom: 40px;
+    
+    
   }
 
   .burtin1 {
@@ -1245,6 +1249,14 @@ span#bur {
     position: absolute;
     right: 20px;
     top: 0;
+  }
+
+  span#bur2 {
+    position: absolute;
+    right: 240px;
+    bottom: 40px;
+    
+    
   }
 
   .burtin2 {

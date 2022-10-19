@@ -391,7 +391,7 @@ form p {
 .modal-container {
   background: #fff;
   width: 90vw;
-  height: 90vh;
+  max-height: 90vh;
   display: grid;
   position: absolute;
   top: 50%;

@@ -37,6 +37,15 @@ scrollLinks.forEach((item) => {
 const projectList = [
   {
     id: 1,
+    modalTitle: 'Multi Post Stories',
+    links: ['html', 'bootsrap', 'Ruby on Rails'],
+    projectImg: './d-images/1-pop-image.png',
+    text: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    livecode: 'https://genuine-crostata-91ee9b.netlify.app/',
+    sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
+  },
+  {
+    id: 2,
     modalTitle: 'Data Dashboard Healthcare',
     links: ['html', 'css', 'javascript'],
     projectImg: './d-images/card.png',
@@ -45,7 +54,7 @@ const projectList = [
     sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
   },
   {
-    id: 2,
+    id: 3,
     modalTitle: 'Health Care Services',
     links: ['java', 'react', 'javascript'],
     projectImg:
@@ -55,7 +64,7 @@ const projectList = [
     sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
   },
   {
-    id: 3,
+    id: 4,
     modalTitle: 'Website Protfolio',
     links: ['MongoDB', 'python', 'Nodejs'],
     projectImg: './d-images/card.png',
@@ -64,7 +73,7 @@ const projectList = [
     sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
   },
   {
-    id: 4,
+    id: 5,
     modalTitle: 'Profesional Art Printing Data More',
     links: ['Angular', 'RubyOnRails', 'javascript'],
     projectImg:
@@ -83,7 +92,7 @@ const projectList = [
     sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
   },
   {
-    id: 6,
+    id: 7,
     modalTitle: 'Website Protfolio',
     links: ['MongoDB', 'python', 'Nodejs'],
     projectImg:

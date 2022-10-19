@@ -417,7 +417,7 @@ form p {
 .modal-links {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -437,14 +437,14 @@ form p {
 
 .popimg {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .modal-container p {
   font-size: 14px;
   line-height: 22px;
   font-family: var(--font-inter);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 span#bur {
@@ -1231,8 +1231,6 @@ span#bur {
     position: absolute;
     right: 380px;
     bottom: 40px;
-    
-    
   }
 
   .burtin1 {
@@ -1255,8 +1253,6 @@ span#bur {
     position: absolute;
     right: 240px;
     bottom: 40px;
-    
-    
   }
 
   .burtin2 {

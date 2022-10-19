@@ -40,7 +40,7 @@ const projectList = [
     modalTitle: 'Data Dashboard Healthcare',
     links: ['html', 'css', 'javascript'],
     projectImg: './d-images/card.png',
-    text: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur est unde totam modi magni? Ea culpa ducimus ad repudiandae? Molestias quae laborum consequatur tenetur odio iste atque temporibus veniam nemo vero aut mollitia, quam non itaque dolor totam debitis, adipisci accusantium quasi sequi in officia corporis. Voluptatum repellendus quia aliquam delectus blanditiis voluptatibus eos voluptates rem facilis',
+    text: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non itaque dolor totam debitis, adipisci accusantium quasi sequi in officia corporis. Voluptatum repellendus quia aliquam delectus blanditiis voluptatibus eos voluptates rem facilis',
     livecode: 'https://genuine-crostata-91ee9b.netlify.app/',
     sourcecode: 'https://github.com/DiamondNath07/Microsoft-start.git',
   },

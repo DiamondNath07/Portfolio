@@ -233,7 +233,6 @@ const modalbg = document.querySelector('.modal-overlay');
 const modalBot = document.querySelectorAll('.modal-btn');
 modalBot.forEach((btn, i) => {
   btn.addEventListener('click', () => {
-    console.log(i);
     modalbg.classList.add('open-modal');
     mobile(i);
   });

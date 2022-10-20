@@ -31,6 +31,7 @@ body {
   align-items: center;
   justify-content: space-around;
   top: 0;
+
   /* z-index: 1; */
   padding: 10px 0;
   padding-left: 30px;
@@ -136,6 +137,7 @@ h1 {
   font-weight: 400;
   padding: 5px 10px 10px 30px;
   letter-spacing: 0.5px;
+
   /* z-index: 1; */
 }
 
@@ -350,11 +352,6 @@ form p {
   padding: 8px;
 }
 
-.caad-btn {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .caad-btn button {
   background: #ff6b00;
   width: 100%;
@@ -364,6 +361,7 @@ form p {
   font-weight: 600;
   color: #fff;
   border: none;
+  margin-top: 20px;
   transition: 0.5s;
 }
 
@@ -371,6 +369,7 @@ form p {
   width: 100%;
   height: 100%;
   display: grid;
+
   /* padding: 80px 0 0 20px; */
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
@@ -467,6 +466,10 @@ span#bur {
   top: 0;
 }
 
+span#bur2 {
+  position: relative;
+}
+
 .burtin2 {
   padding: 10px 45px 10px 10px;
   background-color: #ff6b00;
@@ -482,14 +485,6 @@ span#bur {
   position: absolute;
   right: 20px;
   top: 0;
-}
-
-.carrd {
-  display: none;
-}
-
-.modal-overlay2 {
-  display: none;
 }
 
 .contact span button {
@@ -871,204 +866,51 @@ span#bur {
     flex: 1;
   }
 
-  .caad {
-    display: none;
-  }
-
-  .carrd {
-    display: block;
-    text-align: center;
-  }
-
-  .cards {
+  .pro-cards {
+    max-width: 1050px;
+    gap: 10px;
     margin: 0 auto;
-    max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    font-family: var(--font-inter);
   }
 
-  .card {
-    width: 369px;
-    height: 465px;
-    background-image: url('./d-images/card.png');
-    background-size: cover;
-    box-shadow: 0 0 1px #555;
-    border: none;
-  }
-
-  .card-bot button {
-    background: #ff6b00;
-    width: 100%;
-    height: 10%;
-    padding: 12px 12px;
-    display: none;
-    font-family: var(--font-inter);
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    border: none;
-  }
-
-  .card-bot1 button {
-    background: #ff6b00;
-    width: 100%;
-    height: 10%;
-    padding: 12px 12px;
-    display: none;
-    font-family: var(--font-inter);
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    border: none;
-  }
-
-  .card-bot3 button {
-    background: #ff6b00;
-    width: 100%;
-    height: 10%;
-    padding: 12px 12px;
-    display: none;
-    font-family: var(--font-inter);
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    border: none;
-  }
-
-  .card-bot1 button:hover {
+  .caad {
     display: block;
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.5s ease;
-  }
-
-  .card-bot3 button:hover {
-    display: block;
-    background-color: #fdfadf;
-    border: 1px solid #ff6b00;
-    color: #ff6b00;
-    transition: 0.5s ease;
-  }
-
-  .card:hover .card-bot button {
-    display: block;
-    transition: 3s ease;
-  }
-
-  .card-bot {
-    width: 100%;
-    margin-top: 420px;
-    text-align: center;
-  }
-
-  .card-bot1 {
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .card-bot3 {
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .card2:hover .card-bot1 button,
-  .card3:hover .card-bot3 button,
-  .card1:hover .card-bot1 button {
-    display: block;
-    transition: 3s ease;
-    border: none;
-    /* z-index: 2; */
-  }
-
-  .card2 {
-    width: 369px;
-    height: 465px;
-    background-image: url('./d-images/card2.png');
-    background-size: cover;
-    /* position: relative; */
-  }
-
-  .card-info {
-    margin-top: 160px;
-    padding: 0 20px;
-  }
-
-  .card-info p#note {
-    font-family: 'Crete Round', serif;
-    font-size: 32px;
-    line-height: 44px;
-    letter-spacing: 0.5px;
-    text-align: start;
-    color: #fff;
-  }
-
-  .card-info p {
-    font-family: var(--font-inter);
-    font-size: 17px;
-    padding-top: 15px;
-    text-align: start;
-    line-height: 24px;
-    color: #fff;
-  }
-
-  .card-links {
-    display: flex;
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-
-  .card-links li {
-    list-style: none;
-    padding-right: 10px;
-  }
-
-  .card-links li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.24);
-    padding: 8px;
-  }
-
-  .card3 {
-    width: 369px;
-    height: 465px;
-    background-image: url('./d-images/card3.png');
-    background-size: cover;
-  }
-
-  .card-info3 {
-    margin-top: 215px;
-    padding: 0 20px;
-  }
-
-  .card-info3 p#note {
-    font-family: 'Crete Round', serif;
-    font-size: 32px;
-    line-height: 44px;
-    text-align: start;
-    letter-spacing: 0.5px;
-    color: #fff;
-  }
-
-  .card-info3 p {
-    font-family: var(--font-inter);
-    font-size: 17px;
-    padding-top: 15px;
-    line-height: 24px;
-    text-align: start;
-    color: #fff;
-  }
-
-  .card1 {
-    width: 369px;
-    height: 465px;
+    width: 327px;
+    height: 386px;
     background-image: url('./d-images/card1.png');
+    margin-top: 10px;
     background-size: cover;
+  }
+
+  .caad:nth-child(2),
+  .caad:nth-child(5) {
+    background-image: url('./d-images/card2.png');
+  }
+
+  .caad:nth-child(3),
+  .caad:nth-child(6) {
+    background-image: url('./d-images/card3.png');
+  }
+
+  .caad-btn button {
+    background: #ff6b00;
+    width: 100%;
+    padding: 10px;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    transition: 0.5s;
+    display: none;
+  }
+
+  .caad:hover .caad-btn button {
+    display: block;
+    z-index: 2;
+    width: 100%;
   }
 
   .about {
@@ -1085,11 +927,6 @@ span#bur {
     width: 566px;
     height: 148px;
     margin-bottom: 200px;
-  }
-
-  .about .paragraph p {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   .w-line {
@@ -1140,55 +977,28 @@ span#bur {
     display: none;
   }
 
-  .modal-overlay2 {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    padding: 80px 0 0 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    visibility: hidden;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .open-modalbg {
-    visibility: visible;
-    z-index: 10;
-  }
-
   .modal-container {
-    display: none;
     background: #fff;
-    width: 80vw;
-    height: 90vh;
+    width: 70vw;
+    max-height: 95vh;
     display: grid;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
-  }
-
-  .modal-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    padding: 20px 40px;
+    padding-bottom: 20px;
   }
 
   .modal-title {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    font-weight: 400;
+    font-weight: 700;
     font-family: var(--font-crete);
   }
 
-  .xclose-icon {
+  .x-icon {
     position: absolute;
     top: 20px;
     right: 10px;
@@ -1198,7 +1008,7 @@ span#bur {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .modal-links li {
@@ -1210,27 +1020,39 @@ span#bur {
     color: #000;
   }
 
+  .modal-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .project-imgContainer {
-    width: 550px;
+    display: grid;
+    width: 400px;
   }
 
   .popimg {
     width: 100%;
-    padding-bottom: 20px;
+    height: 90%;
+    position: relative;
   }
 
   .modal-container p {
-    max-width: 426px;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 22px;
     font-family: var(--font-inter);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .about .paragraph p {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   span#bur {
     position: absolute;
-    right: 380px;
-    bottom: 40px;
+    right: 350px;
+    bottom: 55px;
   }
 
   .burtin1 {
@@ -1246,13 +1068,13 @@ span#bur {
     width: 20px;
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 7px;
   }
 
   span#bur2 {
     position: absolute;
-    right: 240px;
-    bottom: 40px;
+    right: 200px;
+    bottom: 55px;
   }
 
   .burtin2 {
@@ -1269,7 +1091,7 @@ span#bur {
     width: 15px;
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 7px;
   }
 }
 

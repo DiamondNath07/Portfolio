@@ -160,7 +160,7 @@
       </ul>
     </article>
   </section>
-  <footer id="contact" class="contact">
+  <footer id="contact" class="contact ">
     <div class="contact-container">
       <article class="interest">
         <h5>
@@ -173,7 +173,10 @@
           <input name="text" maxlength="30" minlength="15" type="text" required placeholder="Full name" />
         </label>
         <label>
-          <input email="email" type="email" required value="Email address" />
+          <article class="emailpop-up">
+            <p>Please input correct email</p>
+          </article>
+          <input email="email" type="email" class="validation" required value="Email address" />
         </label>
         <label>
           <textarea name="message" maxlength="500" required placeholder="Enter text here"></textarea>

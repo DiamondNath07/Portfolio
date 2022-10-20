@@ -193,7 +193,13 @@ h2 {
 
 .frame {
   background-color: #fff;
-  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.frame img {
+  width: 100%;
 }
 
 .frame2 {
@@ -393,12 +399,12 @@ form p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 10px 15px;
 }
 
 .modal-title {
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 18px;
+  line-height: 28px;
   color: #172b4d;
   font-weight: 700;
   font-family: var(--font-inter);
@@ -413,8 +419,8 @@ form p {
 .modal-links {
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .modal-links li {

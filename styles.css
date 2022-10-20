@@ -1014,6 +1014,11 @@ span#bur2 {
     position: absolute;
     top: 20px;
     right: 10px;
+    transition: all 1s ease-in-out;
+  }
+
+  .x-icon:hover {
+    transform: rotate(360deg);
   }
 
   .modal-links {

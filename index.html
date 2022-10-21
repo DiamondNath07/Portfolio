@@ -160,7 +160,7 @@
       </ul>
     </article>
   </section>
-  <footer id="contact" class="contact">
+  <footer id="contact" class="contact ">
     <div class="contact-container">
       <article class="interest">
         <h5>
@@ -170,16 +170,17 @@
       </article>
       <form class="form" action="https://formspree.io/f/xzbwrooo" method="POST">
         <label>
-          <input name="text" maxlength="30" minlength="15" type="text" required placeholder="Full name" />
+          <input name="text"   maxlength="30" minlength="15" type="text" required placeholder="Full name" />
         </label>
         <label>
-          <input email="email" type="email" required value="Email address" />
+            <input email="email" name="email" id="validation" type="email"  required value="Email address" />
         </label>
         <label>
           <textarea name="message" maxlength="500" required placeholder="Enter text here"></textarea>
         </label>
         <span>
-          <button type="submit">Get in touch</button>
+           <p class="alert"> </p>
+          <button class="submit-btn" type="submit">Get in touch</button>
         </span>
       </form>
     </div>

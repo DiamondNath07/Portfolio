@@ -703,6 +703,17 @@ span#bur2 {
   transition: 0.5s;
 }
 
+.alert {
+  color: red;
+  padding: 5px 10px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;

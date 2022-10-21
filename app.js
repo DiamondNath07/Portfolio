@@ -256,3 +256,8 @@ form.addEventListener('submit', (e) => {
     alert.textContent = 'email has to be in lowercase format';
   }
 });
+
+// local storage
+
+const modlbg = document.querySelector('.modal-overlay');
+

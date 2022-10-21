@@ -196,9 +196,7 @@ function mobile(id) {
   });
 }
 
-kardsObj.forEach(({
-  id, mainText, description, techStack,
-}) => {
+kardsObj.forEach(({ id, mainText, description, techStack }) => {
   const element = document.createElement('div');
   const att = document.createAttribute('class');
   att.value = 'caad';
@@ -260,4 +258,4 @@ form.addEventListener('submit', (e) => {
 // local storage
 
 const modlbg = document.querySelector('.modal-overlay');
-
+const form2 = document.querySelector('.form');

@@ -716,9 +716,7 @@ span#bur2 {
 }
 
 .alert {
-  color: #fff;
-  background-color: #29040231;
-  border: 1px solid #380402;
+  color: red;
   padding: 5px 10px;
   width: 60%;
   margin: 0 auto;

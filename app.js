@@ -196,9 +196,7 @@ function mobile(id) {
   });
 }
 
-kardsObj.forEach(({
-  id, mainText, description, techStack,
-}) => {
+kardsObj.forEach(({ id, mainText, description, techStack }) => {
   const element = document.createElement('div');
   const att = document.createAttribute('class');
   att.value = 'caad';
@@ -236,4 +234,23 @@ modalBot.forEach((btn, i) => {
     modalbg.classList.add('open-modal');
     mobile(i);
   });
+});
+
+// form pop-up
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('validation').value.trim();
+  const alert = document.querySelector('.alert');
+
+  const Regx = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+  if (Regx.test(email) === true) {
+    form.submit();
+    form.reset();
+  } else {
+    alert.textContent = 'email has to be in lowercase format';
+  }
 });

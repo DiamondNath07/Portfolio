@@ -715,35 +715,17 @@ span#bur2 {
   z-index: -10;
 }
 
-.emailpop-up p {
-  color: red;
+.alert {
+  color: #fff;
+  background-color: #29040231;
+  border: 1px solid #380402;
+  padding: 5px 10px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
   font-family: var(--font-inter);
   font-weight: 300;
-  font-size: 10px;
-  margin-top: 0;
-  position: absolute;
-  letter-spacing: 0.5px;
-  bottom: 10px;
-  left: 10px;
-}
-
-.emailpop-up p::after {
-  content: '';
-  background-color: #ca2835;
-  position: absolute;
-  display: block;
-  top: 10px;
-  left: -10px;
-  right: 0;
-  bottom: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.showEpopup {
-  visibility: block;
-  z-index: 10;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {

@@ -196,7 +196,9 @@ function mobile(id) {
   });
 }
 
-kardsObj.forEach(({ id, mainText, description, techStack }) => {
+kardsObj.forEach(({
+  id, mainText, description, techStack,
+}) => {
   const element = document.createElement('div');
   const att = document.createAttribute('class');
   att.value = 'caad';
@@ -267,13 +269,13 @@ function storageAvailable(type) {
     return true;
   } catch (e) {
     return (
-      e instanceof DOMException &&
-      (e.code === 22 ||
-        e.code === 1014 ||
-        e.name === 'QuotaExceededError' ||
-        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-      storage &&
-      storage.length !== 0
+      e instanceof DOMException
+      && (e.code === 22
+        || e.code === 1014
+        || e.name === 'QuotaExceededError'
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && storage
+      && storage.length !== 0
     );
   }
 }

@@ -196,7 +196,9 @@ function mobile(id) {
   });
 }
 
-kardsObj.forEach(({ id, mainText, description, techStack }) => {
+kardsObj.forEach(({
+  id, mainText, description, techStack,
+}) => {
   const element = document.createElement('div');
   const att = document.createAttribute('class');
   att.value = 'caad';

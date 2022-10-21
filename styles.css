@@ -703,18 +703,6 @@ span#bur2 {
   transition: 0.5s;
 }
 
-.emailpop-up {
-  width: 150px;
-  height: 30px;
-  background-color: #f4f4f4;
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  position: relative;
-  visibility: none;
-  z-index: -10;
-}
-
 .alert {
   color: red;
   padding: 5px 10px;

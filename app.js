@@ -280,6 +280,16 @@ function storageAvailable(type) {
   }
 }
 
+function test() {
+  const Inputname = document.getElementById('fullname').value;
+  const Inputemail = document.getElementById('validation').value;
+  const Inputmessage = document.getElementById('message').value;
+
+  localStorage.setItem('Inputname', Inputname);
+  localStorage.setItem('Inputemail', Inputemail);
+  localStorage.setItem('Inputmessage', Inputmessage);
+}
+
 if (storageAvailable('localStorage')) {
   const forminputs = [form.Inputname, form.Inputemail, form.Inputmessage];
   forminputs.forEach((forminput) => {
@@ -298,3 +308,6 @@ if (storageAvailable('localStorage')) {
   form.Inputemail.value = getData.Inputemail;
   form.Inputmessage.value = getData.Inputmessage;
 }
+
+const submit = document.querySelector('submit-btn');
+submit.addEventListener('submit', test());

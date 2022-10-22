@@ -256,3 +256,58 @@ form.addEventListener('submit', (e) => {
     alert.textContent = 'email has to be in lowercase format';
   }
 });
+
+// local storage
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return (
+      e instanceof DOMException
+      && (e.code === 22
+        || e.code === 1014
+        || e.name === 'QuotaExceededError'
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && storage
+      && storage.length !== 0
+    );
+  }
+}
+
+function test() {
+  const Inputname = document.getElementById('fullname').value;
+  const Inputemail = document.getElementById('validation').value;
+  const Inputmessage = document.getElementById('message').value;
+
+  localStorage.setItem('Inputname', Inputname);
+  localStorage.setItem('Inputemail', Inputemail);
+  localStorage.setItem('Inputmessage', Inputmessage);
+}
+
+if (storageAvailable('localStorage')) {
+  const forminputs = [form.Inputname, form.Inputemail, form.Inputmessage];
+  forminputs.forEach((forminput) => {
+    forminput.addEventListener('input', () => {
+      const localData = {
+        Inputname: form.Inputname.value,
+        Inputemail: form.Inputemail.value,
+        Inputmessage: form.Inputmessage.value,
+      };
+      localStorage.setItem('inputs', JSON.stringify(localData));
+    });
+  });
+  const getData = JSON.parse(localStorage.getItem('inputs'));
+
+  form.Inputname.value = getData.Inputname;
+  form.Inputemail.value = getData.Inputemail;
+  form.Inputmessage.value = getData.Inputmessage;
+}
+
+const submit = document.querySelector('submit-btn');
+submit.addEventListener('submit', test());

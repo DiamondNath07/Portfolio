@@ -1011,8 +1011,9 @@ span#bur2 {
   }
 
   .frame img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.5s ease;
+    box-shadow: 0 0 10px #3e3e3ea1;
   }
 
   .tag-line {

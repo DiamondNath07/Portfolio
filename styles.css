@@ -248,14 +248,12 @@ form p {
   border-left: 1px solid #fff;
   background-color: #3c3a39;
   animation: typing 5s steps(7) infinite;
-  
 }
 
 @keyframes typing {
   to {
     left: 100%;
     margin: 0 -35px 0 35px;
-    
   }
 }
 
